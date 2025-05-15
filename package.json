@@ -1,0 +1,26 @@
+{
+  "name": "telegram-clone-monorepo",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client-next"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=server\" \"npm run dev --workspace=client-next\"",
+    "dev:server": "npm run dev --workspace=server",
+    "dev:client": "npm run dev --workspace=client-next",
+    "build": "npm run build --workspace=client-next",
+    "start": "npm run start --workspace=server"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "overrides": {
+    "node-fetch": "2.6.7"
+  },
+  "dependencies": {
+    "framer-motion": "^12.11.3",
+    "lucide-react": "^0.510.0",
+    "telegram-clone-monorepo": "file:"
+  }
+}

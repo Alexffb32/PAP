@@ -1,0 +1,16 @@
+{
+  "name": "client-next",
+  "version": "1.0.0",
+  "description": "Next.js frontend for Telegram Clone",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "client-next": "file:",
+    "next": "^13.5.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
